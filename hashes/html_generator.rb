@@ -1,6 +1,7 @@
 def tag(name, text, attributes = {})
   # attributes = { href: "http://lewagon.org", class: "btn" }
   # href='http://lewagon.org'
+  # Map the hash => Array i.e. [" class='btn'", " id='enter'"] and then join => " class='btn' id='enter'"
   html_attributes = attributes.map { |key, value| " #{key}='#{value}'" }.join
   "<#{name}#{html_attributes}>#{text}</#{name}>"
 end
