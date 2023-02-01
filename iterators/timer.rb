@@ -13,7 +13,6 @@ end
 
 # timer
 
-
 def greet(first_name, last_name)
   full_name = "#{first_name.capitalize} #{last_name.upcase}" # John LENONN
   greeting_message = yield(full_name)
@@ -34,6 +33,6 @@ def test_proc(param, proc)
   proc.call
 end
 
-test_proc("this is from the method", Proc.new { puts 'this is proc' }) do
-  puts "this is yield (block)"
+test_proc('this is from the method', proc { puts 'this is proc' }) do
+  puts 'this is yield (block)'
 end

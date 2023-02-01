@@ -1,4 +1,3 @@
-
 # for index in 0...musicians.length
 #   musician = musicians[index]
 #   puts "#{index + 1} - #{musician}"
@@ -46,7 +45,7 @@
 #   musician.include?("David")
 # end
 
-musicians = ['David Gilmour', 'Roger Waters', 'Richard Wright', 'Nick Mason', 'David Bob', "Ben David", "Davidson John"]
+musicians = ['David Gilmour', 'Roger Waters', 'Richard Wright', 'Nick Mason', 'David Bob', 'Ben David', 'Davidson John']
 
 # davids = musicians.select do |musician|
 #   # first_name = musician.split[0]

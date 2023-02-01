@@ -6,12 +6,11 @@ def tag(name, text, attributes = {})
   "<#{name}#{html_attributes}>#{text}</#{name}>"
 end
 
-p tag("h1", "Hello world")
+p tag('h1', 'Hello world')
 # => <h1>Hello world</h1>
 
-p tag("h1", "Hello world", class: "bold")
+p tag('h1', 'Hello world', class: 'bold')
 # => <h1 class="bold">Hello world</h1>
 
-p tag("a", "Le Wagon", href: "http://lewagon.org", class: "btn", id: 'url')
+p tag('a', 'Le Wagon', href: 'http://lewagon.org', class: 'btn', id: 'url')
 # => <a href='http://lewagon.org' class='btn'>Le Wagon</a>
-
