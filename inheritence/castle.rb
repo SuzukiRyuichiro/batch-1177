@@ -9,7 +9,7 @@ class Castle < Building
     @butler = Butler.new(self, "Harry")
   end
 
-  def self.categories
+  def self.categories # can be only called by Castle.categories
     return ["Medieval", "Norman", "Ancient"]
   end
 
