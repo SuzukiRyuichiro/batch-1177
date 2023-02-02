@@ -18,6 +18,6 @@ class Castle < Building
   end
 
   def floor_area
-    super + 500
+    super + 500 # calls Building's floor_area and add extra to that returning value
   end
 end
