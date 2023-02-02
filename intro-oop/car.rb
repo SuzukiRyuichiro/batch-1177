@@ -3,19 +3,22 @@ class Car
   # def color
   #   reutrn @color
   # end
-  attr_accessor :color, :brand, :model
+  attr_accessor :color
 
   # Constructor. Called every time Car.new(...)
-  def initialize(color, brand, model)
+  def initialize(color)
     @color = color
-    @brand = brand
-    @model = model
+    a_normal_variable = 'hello world'
     @engine_started = false
   end
 
   # Instance method. Can be called like car_instance.engine_started?
   def engine_started?
     @engine_started
+  end
+
+  def repaint!(new_color)
+    @color = new_color
   end
 
   def start_engine
@@ -28,10 +31,10 @@ class Car
 
   # Cannot be called like car_instance.start_fuel_pump
   def start_fuel_pump
-    puts "Putting gas"
+    puts 'Putting gas'
   end
 
   def init_spark_plug
-    puts "Spark!!!"
+    puts 'Spark!!!'
   end
 end
