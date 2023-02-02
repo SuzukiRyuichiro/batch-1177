@@ -5,7 +5,7 @@ class Castle < Building
   attr_accessor :butler
 
   def initialize(name, length, width)
-    super(name, length, width)
+    super(name, length, width) # calling initialize of Building
     @butler = Butler.new(self, "Harry")
   end
 
