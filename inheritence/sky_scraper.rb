@@ -1,10 +1,12 @@
 require_relative 'building'
 
 class SkyScraper < Building
+  attr_reader :categories
 
   def initialize(name, width, length, height)
     super(name, width, length) # calling initialize of Building
     @height = height
+    @categories = ["super skyscraper", "low scraper"]
   end
 
   def type_of_owner
@@ -14,6 +16,10 @@ class SkyScraper < Building
     else
       "this #{self.capitalize_name} is a sky scraper for the beginners"
     end
+  end
+
+  def add_category(new_category)
+    @categories << new_category
   end
 
   def capitalize_name

@@ -25,5 +25,11 @@ windsor_castle.butler.clean_castle
 # # Castle.categories # class method != instance method
 # puts Castle.categories.join(', ')
 
-# one_world = SkyScraper.new("One World", 50, 50, 500)
-# puts "The name of the sky scraper is #{one_world.name} and #{one_world.type_of_owner}"
+one_world = SkyScraper.new("One World", 50, 50, 500)
+empire_state = SkyScraper.new("Empire State", 60, 60, 600)
+one_world.add_category("medium sky scraper")
+
+p empire_state.categories
+p one_world.categories
+
+
