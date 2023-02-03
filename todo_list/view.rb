@@ -7,11 +7,13 @@ class View
 
   def ask_for_name
     puts "What's your task?"
+    print '> '
     gets.chomp
   end
 
   def ask_for_index
     puts "What's the number"
+    print '> '
     gets.chomp.to_i - 1
   end
 end

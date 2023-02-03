@@ -11,10 +11,12 @@ class Router
       puts '2 - add a task' # => controller.add
       puts '3 - remove a task'
       puts '4 - mark a task as done'
-      puts '5 - update the name'
       puts '9 - quit the application'
       # get the user input
+      print '> '
       choice = gets.chomp.to_i
+      puts `clear`
+
       # based on that input, tell controller to run that action
       case choice
       when 1
@@ -30,6 +32,8 @@ class Router
       else
         puts 'Wrong input'
       end
+
+      puts '=' * 40
     end
   end
 end
