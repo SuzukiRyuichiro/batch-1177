@@ -1,2 +1,3 @@
 id,name,cured,room_id
-1,kiki,,""
+1,kiki,false,1
+2,scooter,true,3

@@ -6,6 +6,7 @@ class Patient
     @id = attributes[:id]
     @name = attributes[:name]
     @cured = attributes[:cured] || false
+    @room = attributes[:room]
   end
 
   def cured?

@@ -17,4 +17,8 @@ class RoomRepository
     end
     @next_id = @rooms.empty? ? 1 : @rooms.last.id + 1
   end
+
+  def find(id)
+    @rooms.find { |room| room.id == id }
+  end
 end
