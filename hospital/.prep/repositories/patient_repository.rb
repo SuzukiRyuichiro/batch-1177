@@ -46,5 +46,8 @@ rooms_file_path = File.join(__dir__, '../data/rooms.csv')
 room_repo = RoomRepository.new(rooms_file_path)
 
 file_path = File.join(__dir__, '../data/patients.csv')
-binding.pry
 patient_repo = PatientRepository.new(file_path, room_repo)
+
+# see if the auto increment works
+new_patient = Patient.new(name: 'josh')
+

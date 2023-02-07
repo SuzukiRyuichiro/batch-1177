@@ -1,5 +1,5 @@
 class Room
-  attr_reader :capacity
+  attr_reader :capacity, :patients
   attr_accessor :id
 
   class FullRoom < Exception

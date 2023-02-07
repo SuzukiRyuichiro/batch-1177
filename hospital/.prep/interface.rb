@@ -16,3 +16,5 @@ begin
 rescue Room::FullRoom => e
   puts e.message
 end
+
+puts "#{ryan.name} is in a room with #{ryan.room.patients.reject { |patient| patient == ryan }.map(&:name).join(', ')}"
