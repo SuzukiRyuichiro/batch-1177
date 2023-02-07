@@ -51,3 +51,6 @@ patient_repo = PatientRepository.new(file_path, room_repo)
 # see if the auto increment works
 new_patient = Patient.new(name: 'josh')
 
+binding.pry
+
+p patient_repo
