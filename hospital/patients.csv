@@ -1,0 +1,6 @@
+id,name,cured,room_id
+1,scooter,true,1
+2,ryan,true,2
+3,kiki,false,1
+4,campbell,false,3
+5,jess,true,2
