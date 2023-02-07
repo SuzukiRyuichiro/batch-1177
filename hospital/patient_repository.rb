@@ -43,6 +43,9 @@ class PatientRepository
   end
 end
 
+
+# Play ground
+
 csv_file_path = File.join(__dir__, './rooms.csv')
 room_repo = RoomRepository.new(csv_file_path)
 
@@ -54,6 +57,5 @@ kirsty = Patient.new(name: 'kirsty')
 patient_repo.create(yonela)
 patient_repo.create(kirsty)
 
-binding.pry
 
 puts ''
